@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/home_screen_layout"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp"
+    android:background="@color/white"
+    tools:context=".HomeActivity">
+    <!--revenue title-->
+    <TextView
+        android:id="@+id/total_revenue_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_revenue"
+        android:textColor="#6A6969"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--hours title-->
+    <TextView
+        android:id="@+id/total_hours_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/total_reserved_hours"
+        android:textColor="#6A6969"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_revenue_title" />
+    <!--reservations title-->
+    <TextView
+        android:id="@+id/total_reservations_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/total_reservations"
+        android:textColor="#6A6969"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_hours_title" />
+    <!--revenue field-->
+    <TextView
+        android:id="@+id/revenue_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/time_text"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/total_revenue_title"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--hours field-->
+    <TextView
+        android:id="@+id/total_hours_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/time_text"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/total_hours_title"
+        app:layout_constraintTop_toBottomOf="@+id/total_revenue_title" />
+    <!--reservations field-->
+    <TextView
+        android:id="@+id/reservations_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/time_text"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/total_reservations_title"
+        app:layout_constraintTop_toBottomOf="@+id/total_hours_title" />
+    <!--clear button-->
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/design_default_color_error"
+        android:text="@string/clear_button"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
