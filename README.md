@@ -4,7 +4,7 @@
 a small reservation system for a play station devices. It displays state of device if it is available or reserved, it calculates reservation time automatically on pressing a button and it calculates the end time of reservation and time the device was reserved and total price to be paid on pressing end time button and it calculates the total revenue, total time, total reservations automatically on daily basis. application works locally with a small database contains table of reservations and table of devices, its availability and use shared preferences to store total revenue <br>
 
 <b>dependencies used</b> <br>
--local data basse <br>
+-local data base (SQLite) <br>
 -shared preferences<br>
 
 <b>Screenshots from the application</b> 
